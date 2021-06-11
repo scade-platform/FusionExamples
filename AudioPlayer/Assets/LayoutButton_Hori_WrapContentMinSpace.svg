@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="37px" viewBox="0 0 183 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>IconsLayout_fl1</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#4A4A4A" x="51" y="1" width="80" height="35"></rect>
+        <path id="Line" d="M42,15 L51,19.5 L42,24 L42,20 L0,20 L0,19 L42,19 L42,15 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+        <path id="Line" d="M81,15 L90,19.5 L81,24 L81,20 L53,20 L53,19 L81,19 L81,15 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+        <path id="Line" d="M101,15 L101,19 L129,19 L129,20 L101,20 L101,24 L92,19.5 L101,15 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+        <path id="Line" d="M140,15 L140,19 L182,19 L182,20 L140,20 L140,24 L131,19.5 L140,15 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+    </g>
+</svg>

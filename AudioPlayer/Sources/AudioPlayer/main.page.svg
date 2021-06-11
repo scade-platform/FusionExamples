@@ -1,12 +1,54 @@
-<?xml encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="main" eObject-URI="main.page#/0" width="428" height="926">
-  <svg template-id="background" width="428" height="926" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
-    <rect width="100%" height="100%" fill="#f8f8f8" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="main" eObject-URI="main.page#/0" width="414" height="736">
+  <svg template-id="background" width="414" height="736" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+    <rect stroke-width="0" width="100%" height="100%" fill="#feffff" />
   </svg>
   <g template-id="content">
-    <g widget-name="button1" eObject-URI="main.page#/0/@children.0" transform="matrix(1 0 0 1 171 452)">
-      <svg template-id="background" width="86" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="43" y="11.5" fill="#446ab3">Play</text>
+    <g widget-name="rowView1" eObject-URI="main.page#/0/@children.0" transform="matrix(1 0 0 1 31 581)">
+      <svg template-id="background" width="353" height="105" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <g template-id="content">
+        <g widget-name="image2" eObject-URI="main.page#/0/@children.0/@children.0" transform="matrix(1 0 0 1 5 5)">
+          <svg template-id="background" width="42" height="100" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <image xlink:href="Assets/speaker.svg" template-id="node-image" width="42" height="100" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
+        </g>
+        <g widget-name="image3" eObject-URI="main.page#/0/@children.0/@children.1" transform="matrix(1 0 0 1 286 5)">
+          <svg template-id="background" width="62" height="100" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <image xlink:href="Assets/speaker.svg" template-id="node-image" width="62" height="100" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
+        </g>
+        <g widget-name="volumeSlide" eObject-URI="main.page#/0/@children.0/@children.2" transform="matrix(1 0 0 1 47 5)">
+          <svg template-id="background" width="239" height="100" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <g transform="matrix(1 0 0 1 20 0)">
+            <rect template-id="node-line" y="50" width="199" height="2" fill="#b5b6b5" constraints="direct!http://scade.com/svg/draw#//Rect/y|size.h/2;direct!http://scade.com/svg/draw#//Rect/width|size.w-40" />
+            <rect template-id="node-fill" y="50" width="99.5" height="2" fill="#7aff" constraints="direct!http://scade.com/svg/draw#//Rect/y|size.h/2" />
+            <svg template-id="node-bullet" x="85.5" y="36" width="28" height="28">
+              <ellipse cx="50%" cy="50%" rx="50%" ry="50%" fill="#ffffff" stroke="#dbdbdb" />
+            </svg>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g widget-name="playStopButton" eObject-URI="main.page#/0/@children.1" transform="matrix(1 0 0 1 98 466)">
+      <svg template-id="background" width="219" height="100" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <image xlink:href="Assets/play1.svg" template-id="node-image" width="219" height="100" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
+    </g>
+    <g widget-name="rowView2" eObject-URI="main.page#/0/@children.2" transform="matrix(1 0 0 1 51 306)">
+      <svg template-id="background" width="306" height="100" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <g template-id="content">
+        <g widget-name="playPositionLabel" eObject-URI="main.page#/0/@children.2/@children.0" transform="matrix(1 0 0 1 257 5)">
+          <svg template-id="background" width="44" height="90" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <text text-anchor="middle" alignment-baseline="central" font-size="12" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="22" y="45" fill="#464646" />
+        </g>
+        <g widget-name="positionSlide" eObject-URI="main.page#/0/@children.2/@children.1" transform="matrix(1 0 0 1 5 5)">
+          <svg template-id="background" width="252" height="90" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+          <g transform="matrix(1 0 0 1 20 0)">
+            <rect template-id="node-line" y="45" width="212" height="2" fill="#b5b6b5" constraints="direct!http://scade.com/svg/draw#//Rect/y|size.h/2;direct!http://scade.com/svg/draw#//Rect/width|size.w-40" />
+            <rect template-id="node-fill" y="45" width="0" height="2" fill="#7aff" constraints="direct!http://scade.com/svg/draw#//Rect/y|size.h/2" />
+            <svg template-id="node-bullet" x="-14" y="31" width="28" height="28">
+              <ellipse cx="50%" cy="50%" rx="50%" ry="50%" fill="#ffffff" stroke="#dbdbdb" />
+            </svg>
+          </g>
+        </g>
+      </g>
     </g>
   </g>
 </svg>

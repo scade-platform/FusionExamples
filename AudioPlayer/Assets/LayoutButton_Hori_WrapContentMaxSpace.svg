@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="196px" height="88px" viewBox="0 0 196 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" x="1" y="1" width="194" height="86" rx="2"></rect>
+        <rect id="Rectangle" stroke="#4A4A4A" x="57" y="26" width="80" height="35"></rect>
+        <path id="Line" d="M11,40 L11,44 L35,44 L35,45 L11,45 L11,49 L2,44.5 L11,40 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+        <path id="Line" d="M87,40 L96,44.5 L87,49 L87,45 L59,45 L59,44 L87,44 L87,40 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+        <path id="Line" d="M107,40 L107,44 L135,44 L135,45 L107,45 L107,49 L98,44.5 L107,40 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+        <path id="Line" d="M185,40 L194,44.5 L185,49 L185,45 L161,45 L161,44 L185,44 L185,40 Z" fill="#4A4A4A" fill-rule="nonzero"></path>
+    </g>
+</svg>

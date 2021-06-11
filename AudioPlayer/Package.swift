@@ -8,7 +8,7 @@ let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 let package = Package(
     name: "AudioPlayer",
     platforms: [
-        .macOS(.v10_14), .iOS(.v14)
+        .macOS(.v10_14)
     ],
     products: [
         .library(
@@ -27,10 +27,10 @@ let package = Package(
         .target(
             name: "AudioPlayer",
             dependencies: [
-                .product(name: "FusionMedia", package: "FusionMedia"),
-                .product(name: "ScadeExtensions", package: "ScadeExtensions"),
+            	.product(name: "FusionMedia", package: "FusionMedia"),
+            	.product(name: "ScadeExtensions", package: "ScadeExtensions")
             ],
-            exclude: ["main.page", "main.page.svg"],
+            exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),
                 .unsafeFlags(["-I", "\(SCADE_SDK)/include"], .when(platforms: [.android])),

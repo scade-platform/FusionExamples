@@ -13,7 +13,7 @@ linked-libs: []
 
 ios:
   name: AudioPlayer
-  id: com.scade.audioplayer
+  id: com.scade.fusionaudioplayer
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -69,16 +69,14 @@ ios:
 
 android:
   name: AudioPlayer
-  id: com.scade.audioplayer
+  id: com.scade.fusionaudioplayer
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
   key-store-properties:
   google-api-key:
   manifest-file:
-  permissions: 
-    - ACCESS_FINE_LOCATION
-    - ACCESS_COARSE_LOCATION
+  permissions: []
   armeabi-v7a:
     output: AudioPlayer/.build/android-armeabi-v7a
     product-path: AudioPlayer/Product/android-armeabi-v7a
