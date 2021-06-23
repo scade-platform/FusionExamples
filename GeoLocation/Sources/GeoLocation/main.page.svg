@@ -34,7 +34,7 @@
       <svg template-id="background" width="17" height="34" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
       <text alignment-baseline="central" font-size="30" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="17" fill="#f7f6f8">0</text>
     </g>
-    <g widget-name="list" eObject-URI="main.page#/0/@children.7" transform="matrix(1 0 0 1 25 450)" display="none">
+    <g display="none" widget-name="list" eObject-URI="main.page#/0/@children.7" transform="matrix(1 0 0 1 25 450)">
       <g scrollableBox="364 148" template-id="listContent" scrollable="vertical" constraints="scrollsize!size.w|size.h">
         <g widget-name="listElement" eObject-URI="main.page#/0/@children.7/@template/@element">
           <svg template-id="background" width="364" height="45" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
@@ -59,15 +59,15 @@
         <rect stroke-width="0" width="100%" height="100%" rx="2.5%" fill="#ffffff" />
       </svg>
       <g template-id="content">
-        <g widget-name="choose_city" eObject-URI="main.page#/0/@children.8/@children.0" transform="matrix(1 0 0 1 5 0)">
+        <g widget-name="choose_city" eObject-URI="main.page#/0/@children.8/@children.0" transform="matrix(1 0 0 1 15 0)">
           <svg template-id="background" width="99" height="50" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-          <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="49.5" y="25" fill="#102">From the city</text>
+          <text text-anchor="start" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="25" fill="#102">From the city</text>
         </g>
-        <g widget-name="arrow_button" eObject-URI="main.page#/0/@children.8/@children.1" transform="matrix(1 0 0 1 288 13)">
-          <svg template-id="background" width="86" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
-            <image xlink:href="Assets/drop-down-arrow-icon-69.png" width="100%" height="100%" />
+        <g transform="matrix(1 0 0 1 288 13)" widget-name="arrow_button" eObject-URI="main.page#/0/@children.8/@children.1">
+          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="23" width="86">
+            <image width="100%" height="100%" xlink:href="Assets/drop-down-arrow-icon-69.png" />
           </svg>
-          <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="43" y="11.5" fill="#446ab3" />
+          <text font-size="17" font-family="ArialMT" template-id="node-text" x="43" y="11.5" fill="#446ab3" alignment-baseline="central" text-anchor="middle" font-style="normal" text-decoration="none"></text>
         </g>
       </g>
     </g>

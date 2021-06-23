@@ -130,7 +130,7 @@
       <minArea xsi:type="graphics:Dimension"/>
       <location xsi:type="graphics:Point" x="20" y="399"/>
       <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255"/>
-      <children xsi:type="widgets:Button" text="From the city" name="choose_city" wrapText="true" horizontalAlignment="CENTER">
+      <children xsi:type="widgets:Button" text="From the city" name="choose_city" wrapText="true">
         <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
           <color xsi:type="graphics:RGB" Green="1" Blue="2"/>
         </font>
@@ -138,7 +138,7 @@
           <minSize xsi:type="graphics:Dimension" width="99" height="19"/>
           <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
         </layoutData>
-        <location xsi:type="graphics:Point" x="5"/>
+        <location xsi:type="graphics:Point" x="15"/>
         <size xsi:type="graphics:Dimension" width="99" height="50"/>
         <contentSize xsi:type="graphics:Dimension" width="99" height="19"/>
       </children>
@@ -154,7 +154,7 @@
         <size xsi:type="graphics:Dimension" width="86" height="23"/>
         <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
       </children>
-      <layout xsi:type="layout:GridLayout" columns="2" marginLeft="5"/>
+      <layout xsi:type="layout:GridLayout" columns="2" marginLeft="15"/>
       <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
       <size xsi:type="graphics:Dimension" width="374" height="50"/>
       <layoutData xsi:type="layout:AutoLayoutData">
