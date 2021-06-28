@@ -21,7 +21,7 @@ extension WriterPageAdapter {
     return self.page?.getWidgetByName("descriptionTextBox") as! SCDWidgetsTextbox
   }
 
-  var button1: SCDWidgetsButton {
-    return self.page?.getWidgetByName("button1") as! SCDWidgetsButton
+  var writeButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("writeButton") as! SCDWidgetsButton
   }
 }

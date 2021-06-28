@@ -17,7 +17,7 @@ ios:
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
-  entitlements-file: NFCTool.entitlements
+  entitlements-file: NFCTool/NFCTool.entitlements
   app-delegate-file:
   export-method: ad-hoc # app-store, enterprise or development
   simulator:
@@ -35,13 +35,13 @@ ios:
     linked-libs: []
   mac:
     os: 10.11
-    output:  NFCTool/.build/scade-simulator
+    output: NFCTool/.build/scade-simulator
     extra-args:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile:
-    certificate:
+    provision-profile: /Volumes/Work/Work/Ongoing_Project/Scade/Data/Provision/NFCTool_Adhoc.mobileprovision
+    certificate: /Volumes/Work/Work/Ongoing_Project/Scade/Data/Provision/ScadeAdHoc.p12
   icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
       60X60_2X:
@@ -71,17 +71,17 @@ ios:
       value: This app read and write tags
     - key: UIRequiredDeviceCapabilities
       type: list
-      value: ["armv7", "nfc"]           
+      value: ["armv7", "nfc"]         
 
 android:
   name: NFCTool
-  id: com.scade.nfctool
+  id: com.scadefusion.nfc
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
   key-store-properties:
   google-api-key:
-  manifest-file: AndroidManifest.xml 
+  manifest-file: AndroidManifest.xml
   permissions: ["NFC"]
   armeabi-v7a:
     output: NFCTool/.build/android-armeabi-v7a

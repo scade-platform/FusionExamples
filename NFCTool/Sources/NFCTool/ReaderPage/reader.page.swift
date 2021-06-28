@@ -2,15 +2,29 @@ import ScadeKit
 import FusionNFC
   
 class ReaderPageAdapter: SCDLatticePageAdapter {
-    var nfcUtility: NFCUtility?  
+    var nfcManager: NFCManager?  
   	// page adapter initialization
   	override func load(_ path: String) {
     	super.load(path)
-        self.readButton.onClick{_ in self.read()}    	
+		nfcManager = NFCManager(alertMessage: "Hold your iPhone near an NFC tag.")    	
+        self.readButton.onClick{_ in self.read()}
+	    self.page!.onExit.append(SCDWidgetsExitEventHandler{_ in
+	    	self.nfcManager?.disableForegroundDispatch()
+        })        
   	}
   	
   	func read() {
-  		print("pavlo start read func")
-		nfcUtility = NFCUtility(alertMessage: "Hold your iPhone near an NFC tag.")        nfcUtility?.readTag { message in            print("url = \(message?.uriRecord?.url)")        }
+  		urlLabel.text = "pavlo start read func"
+
+        nfcManager?.readTag { message in
+        	guard let message = message else { return }
+        	if let uriRecord = message.uriRecord {
+        		self.urlLabel.text = "URL: \(uriRecord.url.absoluteString)"
+        	}
+          	
+          	if let textRecord = message.textRecord {
+          		self.descriptionLabel.text = "Description: \(textRecord.string)"	
+          	}			
+        }
     }
 }
