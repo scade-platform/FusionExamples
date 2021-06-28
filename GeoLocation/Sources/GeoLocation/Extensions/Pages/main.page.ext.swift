@@ -1,63 +1,59 @@
 import ScadeKit
 
 extension MainPageAdapter {
-  var listView1: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView1") as! SCDWidgetsListView
+  var startButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("startButton") as! SCDWidgetsButton
   }
 
-  var label: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("label") as! SCDWidgetsLabel
-  }
-
-  var lngLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("lngLabel") as! SCDWidgetsLabel
-  }
-
-  var latLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("latLabel") as! SCDWidgetsLabel
-  }
-
-  var gridView1: SCDWidgetsGridView {
-    return self.page?.getWidgetByName("gridView1") as! SCDWidgetsGridView
+  var current_city: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("current_city") as! SCDWidgetsLabel
   }
 
   var label1: SCDWidgetsLabel {
     return self.page?.getWidgetByName("label1") as! SCDWidgetsLabel
   }
 
-  var newyorkButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("newyorkButton") as! SCDWidgetsButton
+  var label: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label") as! SCDWidgetsLabel
   }
 
-  var londonButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("londonButton") as! SCDWidgetsButton
+  var BearingText: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("BearingText") as! SCDWidgetsLabel
   }
 
-  var moscowButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("moscowButton") as! SCDWidgetsButton
-  }
-
-  var listView2: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView2") as! SCDWidgetsListView
-  }
-
-  var distanceLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("distanceLabel") as! SCDWidgetsLabel
+  var distanceText: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("distanceText") as! SCDWidgetsLabel
   }
 
   var bearingLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("bearingLabel") as! SCDWidgetsLabel
   }
 
-  var gridView2: SCDWidgetsGridView {
-    return self.page?.getWidgetByName("gridView2") as! SCDWidgetsGridView
+  var list: SCDWidgetsList {
+    return self.page?.getWidgetByName("list") as! SCDWidgetsList
   }
 
-  var startButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("startButton") as! SCDWidgetsButton
+  var grid: SCDWidgetsGridView {
+    return self.page?.getWidgetByName("grid") as! SCDWidgetsGridView
   }
 
-  var stopButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("stopButton") as! SCDWidgetsButton
+  var choose_city: SCDWidgetsButton {
+    return self.page?.getWidgetByName("choose_city") as! SCDWidgetsButton
+  }
+
+  var arrow_button: SCDWidgetsButton {
+    return self.page?.getWidgetByName("arrow_button") as! SCDWidgetsButton
+  }
+
+  var latLabel: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("latLabel") as! SCDWidgetsLabel
+  }
+
+  var lngLabel: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("lngLabel") as! SCDWidgetsLabel
+  }
+
+  var distanceLabel: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("distanceLabel") as! SCDWidgetsLabel
   }
 }

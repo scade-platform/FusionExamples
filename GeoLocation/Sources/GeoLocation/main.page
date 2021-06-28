@@ -1,196 +1,207 @@
 <?xml  version="1.0" encoding="UTF-8" standalone="no"?>
-<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
-  <widgets:Page name="main">
-    <minArea xsi:type="graphics:Dimension" width="414" height="736"/>
-    <location xsi:type="graphics:Point"/>
-    <backgroundColor xsi:type="graphics:RGB" Red="248" Green="248" Blue="248"/>
-    <children xsi:type="widgets:ListView" name="listView1">
-      <children xsi:type="widgets:Label" text="Your location" name="label">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="25">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="5"/>
-        <size xsi:type="graphics:Dimension" width="404" height="29"/>
-        <contentSize xsi:type="graphics:Dimension" width="144" height="29"/>
-      </children>
-      <children xsi:type="widgets:Label" text="Longitude: 0" name="lngLabel">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="34"/>
-        <size xsi:type="graphics:Dimension" width="404" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="94" height="22"/>
-      </children>
-      <children xsi:type="widgets:Label" text="Latitude: 0" name="latLabel">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="56"/>
-        <size xsi:type="graphics:Dimension" width="404" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="80" height="22"/>
-      </children>
-      <layout xsi:type="layout:GridLayout" rows="6" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
-      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point" y="170"/>
-      <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="414" height="266"/>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgetlayouts="http://scade.com/sdk/view/widgets/layout" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page backgroundImage="Assets/Boston.jpg" name="main">
+    <children xsi:type="widgets:Button" text="Start Tracking" name="startButton" horizontalAlignment="CENTER" cornerRadius="10">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="21">
+        <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="251"/>
+      </font>
+      <location xsi:type="graphics:Point" x="50" y="269"/>
+      <size xsi:type="graphics:Dimension" width="315" height="30"/>
+      <contentSize xsi:type="graphics:Dimension" width="130" height="24"/>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="20" source="/0/@children.0" target="/0/@children.3"/>
-        <constraints xsi:type="layout:Constraint" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-50" source="/0/@children.0" target="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="150" source="/0/@children.0" target="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0" target="/0"/>
+      </layoutData>
+      <backgroundColor xsi:type="graphics:RGB" Red="90" Green="175" Blue="255"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Your City" name="current_city">
+      <font xsi:type="graphics:Font" fontFamily="Tahoma" size="40">
+        <color xsi:type="graphics:RGB" Red="241" Green="240" Blue="242"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" constant="70" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="128" y="70"/>
+      <size xsi:type="graphics:Dimension" width="158" height="49"/>
+      <contentSize xsi:type="graphics:Dimension" width="158" height="49"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Latitude:" name="label1">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+        <color xsi:type="graphics:RGB" Red="245" Green="243" Blue="246"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="80" source="/0/@children.2" target="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" constant="50" source="/0/@children.2" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="50" y="199"/>
+      <size xsi:type="graphics:Dimension" width="66" height="19"/>
+      <contentSize xsi:type="graphics:Dimension" width="66" height="19"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Longitude:" name="label">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+        <color xsi:type="graphics:RGB" Red="249" Green="248" Blue="251"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="50" source="/0/@children.3" target="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" constant="50" source="/0/@children.3" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="50" y="169"/>
+      <size xsi:type="graphics:Dimension" width="80" height="19"/>
+      <contentSize xsi:type="graphics:Dimension" width="80" height="19"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Bearing (degree): " name="BearingText">
+      <font xsi:type="graphics:Font" fontFamily="Arial-BoldMT" size="17">
+        <color xsi:type="graphics:RGB" Red="252" Green="251" Blue="254"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="60" source="/0/@children.4" target="/0/@children.7"/>
+        <constraints xsi:type="layout:Constraint" constant="50" source="/0/@children.4" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="50" y="658"/>
+      <size xsi:type="graphics:Dimension" width="141" height="19"/>
+      <contentSize xsi:type="graphics:Dimension" width="141" height="19"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Distance (kilometers): " name="distanceText">
+      <font xsi:type="graphics:Font" fontFamily="Arial-BoldMT" size="17">
+        <color xsi:type="graphics:RGB" Red="242" Green="241" Blue="243"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="10" source="/0/@children.5" target="/0/@children.7"/>
+        <constraints xsi:type="layout:Constraint" constant="50" source="/0/@children.5" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="50" y="608"/>
+      <size xsi:type="graphics:Dimension" width="178" height="19"/>
+      <contentSize xsi:type="graphics:Dimension" width="178" height="19"/>
+    </children>
+    <children xsi:type="widgets:Label" text="0" name="bearingLabel">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="30">
+        <color xsi:type="graphics:RGB" Red="247" Green="246" Blue="248"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="50" source="/0/@children.6" target="/0/@children.7"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-50" source="/0/@children.6" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="347" y="648"/>
+      <size xsi:type="graphics:Dimension" width="17" height="34"/>
+      <contentSize xsi:type="graphics:Dimension" width="17" height="34"/>
+    </children>
+    <children xsi:type="widgets:List" name="list" visible="false">
+      <template xsi:type="widgets:ListTemplate" name="template">
+        <element xsi:type="widgets:ListElement" name="listElement">
+          <minArea xsi:type="graphics:Dimension" height="45"/>
+          <location xsi:type="graphics:Point"/>
+          <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255"/>
+          <children xsi:type="widgets:Label" text="city" name="cityName" horizontalAlignment="CENTER">
+            <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+              <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+            </font>
+            <layoutData xsi:type="layout:GridData" grabVerticalSpace="true" heightConstraint="MATCH_PARENT">
+              <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
+              <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+            </layoutData>
+            <location xsi:type="graphics:Point" x="10"/>
+            <size xsi:type="graphics:Dimension" width="44" height="45"/>
+            <contentSize xsi:type="graphics:Dimension" width="44" height="22"/>
+          </children>
+          <layout xsi:type="layout:GridLayout" marginLeft="10"/>
+          <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+          <size xsi:type="graphics:Dimension" width="364" height="45"/>
+          <layoutData xsi:type="layout:GridData" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" heightConstraint="MATCH_PARENT">
+            <minSize xsi:type="graphics:Dimension"/>
+          </layoutData>
+        </element>
+        <location xsi:type="graphics:Point"/>
+        <size xsi:type="graphics:Dimension"/>
+      </template>
+      <size xsi:type="graphics:Dimension" width="364" height="148"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <location xsi:type="graphics:Point" x="25" y="450"/>
+      <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255"/>
+      <layout xsi:type="widgetlayouts:ListLayout"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="1" source="/0/@children.7" target="/0/@children.8"/>
+        <constraints xsi:type="layout:Constraint" constant="25" source="/0/@children.7" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-25" source="/0/@children.7" target="/0"/>
       </layoutData>
     </children>
-    <children xsi:type="widgets:GridView" name="gridView1">
-      <children xsi:type="widgets:Label" text="Please select the city" name="label1">
+    <children xsi:type="widgets:GridView" cornerRadius="5" name="grid">
+      <minArea xsi:type="graphics:Dimension"/>
+      <location xsi:type="graphics:Point" x="20" y="399"/>
+      <backgroundColor xsi:type="graphics:RGB" Red="255" Green="255" Blue="255"/>
+      <children xsi:type="widgets:Button" text="From the city" name="choose_city" wrapText="true">
         <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+          <color xsi:type="graphics:RGB" Green="1" Blue="2"/>
+        </font>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="99" height="19"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <location xsi:type="graphics:Point" x="15"/>
+        <size xsi:type="graphics:Dimension" width="99" height="50"/>
+        <contentSize xsi:type="graphics:Dimension" width="99" height="19"/>
+      </children>
+      <children xsi:type="widgets:Button" horizontalAlignment="CENTER" backgroundImage="Assets/drop-down-arrow-icon-69.png" name="arrow_button">
+        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
         </font>
         <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="127" y="5"/>
-        <size xsi:type="graphics:Dimension" width="160" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="160" height="22"/>
-      </children>
-      <children xsi:type="widgets:Button" text="New York" name="newyorkButton" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true">
           <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
           <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
         </layoutData>
-        <location xsi:type="graphics:Point" x="23" y="27"/>
+        <location xsi:type="graphics:Point" x="288" y="13"/>
         <size xsi:type="graphics:Dimension" width="86" height="23"/>
         <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
       </children>
-      <children xsi:type="widgets:Button" text="London" name="londonButton" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" column="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" row="1" grabHorizontalSpace="true">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="164" y="27"/>
-        <size xsi:type="graphics:Dimension" width="86" height="23"/>
-        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
-      </children>
-      <children xsi:type="widgets:Button" text="Moscow" name="moscowButton" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" column="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" row="1" grabHorizontalSpace="true">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="305" y="27"/>
-        <size xsi:type="graphics:Dimension" width="86" height="23"/>
-        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
-      </children>
-      <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" columns="3" marginBottom="5" marginLeft="5" marginRight="5"/>
+      <layout xsi:type="layout:GridLayout" columns="2" marginLeft="15"/>
       <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point" y="486"/>
-      <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="414" height="100"/>
+      <size xsi:type="graphics:Dimension" width="374" height="50"/>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="50" source="/0/@children.1" target="/0/@children.0"/>
-        <constraints xsi:type="layout:Constraint" source="/0/@children.1" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" source="/0/@children.1" target="/0/@children.2"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="HEIGHT" constant="100" source="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="100" source="/0/@children.8" target="/0/@children.0"/>
+        <constraints xsi:type="layout:Constraint" constant="20" source="/0/@children.8" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-20" source="/0/@children.8" target="/0"/>
       </layoutData>
     </children>
-    <children xsi:type="widgets:ListView" name="listView2">
-      <children xsi:type="widgets:Label" text="Distance from New York(kilometers): 0" name="distanceLabel">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="5"/>
-        <size xsi:type="graphics:Dimension" width="404" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="290" height="22"/>
-      </children>
-      <children xsi:type="widgets:Label" text="Bearing from New York(degree): 0" name="bearingLabel">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="27"/>
-        <size xsi:type="graphics:Dimension" width="404" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="258" height="22"/>
-      </children>
-      <layout xsi:type="layout:GridLayout" rows="2" marginTop="5" marginBottom="5" marginLeft="5" marginRight="5"/>
-      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point" y="586"/>
-      <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="414" height="150"/>
+    <children xsi:type="widgets:Label" text="0" name="latLabel">
+      <font xsi:type="graphics:Font" fontFamily="Tahoma" size="17">
+        <color xsi:type="graphics:RGB" Red="249" Green="247" Blue="250"/>
+      </font>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.2" target="/0/@children.1"/>
-        <constraints xsi:type="layout:Constraint" source="/0/@children.2" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.2" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.2" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="80" source="/0/@children.9" target="/0/@children.1"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-100" source="/0/@children.9" target="/0"/>
       </layoutData>
+      <location xsi:type="graphics:Point" x="224" y="199"/>
+      <size xsi:type="graphics:Dimension" width="90" height="22"/>
+      <contentSize xsi:type="graphics:Dimension" width="10" height="21"/>
     </children>
-    <children xsi:type="widgets:GridView" name="gridView2">
-      <children xsi:type="widgets:Button" text="Start Tracking" name="startButton" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="21">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="5" y="5"/>
-        <size xsi:type="graphics:Dimension" width="202" height="24"/>
-        <contentSize xsi:type="graphics:Dimension" width="130" height="24"/>
-      </children>
-      <children xsi:type="widgets:Button" text="Stop Tracking" name="stopButton" horizontalAlignment="CENTER">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="21">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="207" y="5"/>
-        <size xsi:type="graphics:Dimension" width="202" height="24"/>
-        <contentSize xsi:type="graphics:Dimension" width="129" height="24"/>
-      </children>
-      <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
-      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point" y="50"/>
-      <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="414" height="100"/>
+    <children xsi:type="widgets:Label" text="0" name="lngLabel">
+      <font xsi:type="graphics:Font" fontFamily="Tahoma" size="17">
+        <color xsi:type="graphics:RGB" Red="246" Green="246" Blue="246"/>
+      </font>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" constant="50" source="/0/@children.3" target="/0"/>
-        <constraints xsi:type="layout:Constraint" source="/0/@children.3" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.3" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-20" source="/0/@children.3" target="/0/@children.0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-100" source="/0/@children.10" target="/0"/>
       </layoutData>
+      <location xsi:type="graphics:Point" x="224" y="169"/>
+      <size xsi:type="graphics:Dimension" width="90" height="22"/>
+      <contentSize xsi:type="graphics:Dimension" width="10" height="21"/>
+    </children>
+    <children xsi:type="widgets:Label" text="0" name="distanceLabel">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="30">
+        <color xsi:type="graphics:RGB" Red="248" Green="246" Blue="249"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" constant="10" source="/0/@children.11" target="/0/@children.7"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-50" source="/0/@children.11" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="347" y="608"/>
+      <size xsi:type="graphics:Dimension" width="17" height="34"/>
+      <contentSize xsi:type="graphics:Dimension" width="17" height="34"/>
     </children>
     <layout xsi:type="layout:AutoLayout"/>
     <maxArea xsi:type="graphics:Dimension" width="414" height="736"/>
+    <location xsi:type="graphics:Point"/>
+    <minArea xsi:type="graphics:Dimension" width="414" height="736"/>
     <size xsi:type="graphics:Dimension" width="414" height="736"/>
   </widgets:Page>
   <binding:BindingModel/>
