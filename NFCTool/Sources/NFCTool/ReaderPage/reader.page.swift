@@ -14,8 +14,6 @@ class ReaderPageAdapter: SCDLatticePageAdapter {
   	}
   	
   	func read() {
-  		urlLabel.text = "pavlo start read func"
-
         nfcManager?.readTag { message in
         	guard let message = message else { return }
         	if let uriRecord = message.uriRecord {

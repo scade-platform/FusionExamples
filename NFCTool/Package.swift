@@ -20,7 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-      	.package(name: "FusionNFC", url: "https://github.com/pavloboiko/FusionNFC.git", .branch("master"))
+      	.package(name: "FusionNFC", url: "https://github.com/scade-platform/FusionNFC.git", .branch("main"))
     ],
     targets: [
         .target(

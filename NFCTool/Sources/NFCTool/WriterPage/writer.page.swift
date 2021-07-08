@@ -15,7 +15,15 @@ class WriterPageAdapter: SCDLatticePageAdapter {
   	}
   	
   	func write() {
-  		urlTextBox.text = "pavlo start write func"
-        var uriRecord: NFCURIRecord?        if let url = URL(string: urlTextBox.text) {            uriRecord = NFCURIRecord(url: url)        }                let textRecord = NFCTextRecord(string: descriptionTextBox.text, locale: Locale(identifier: "en"))        let nfcMessage = NFCMessage(uriRecord: uriRecord, textRecord: textRecord)                nfcManager = NFCManager(alertMessage: "Hold your iPhone near an NFC tag.")        nfcManager?.writeTag(nfcMessage)
+        var uriRecord: NFCURIRecord?
+        if let url = URL(string: urlTextBox.text) {
+            uriRecord = NFCURIRecord(url: url)
+        }
+        
+        let textRecord = NFCTextRecord(string: descriptionTextBox.text, locale: Locale(identifier: "en"))
+        let nfcMessage = NFCMessage(uriRecord: uriRecord, textRecord: textRecord)
+        
+        nfcManager = NFCManager(alertMessage: "Hold your iPhone near an NFC tag.")
+        nfcManager?.writeTag(nfcMessage)
     }  	
 }
