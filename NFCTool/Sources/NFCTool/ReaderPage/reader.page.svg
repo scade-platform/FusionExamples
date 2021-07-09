@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="reader.page#/0" widget-name="reader" width="414" height="736">
+  <svg template-id="background" width="414" height="736" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+    <rect width="100%" height="100%" fill="#f8f8f8" />
+  </svg>
+  <g template-id="content">
+    <g transform="matrix(1 0 0 1 0 200)" widget-name="listView1" eObject-URI="reader.page#/0/@children.0">
+      <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="536" width="414" />
+      <g template-id="content">
+        <g transform="matrix(1 0 0 1 30 5)" widget-name="urlLabel" eObject-URI="reader.page#/0/@children.0/@children.0">
+          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="22" width="354" />
+          <text font-size="17" font-family="ArialMT" template-id="node-text" x="0" y="11" fill="#464646" alignment-baseline="central" font-style="normal" text-decoration="none">URL: http://google.com</text>
+        </g>
+        <g transform="matrix(1 0 0 1 30 27)" widget-name="descriptionLabel" eObject-URI="reader.page#/0/@children.0/@children.1">
+          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="22" width="354" />
+          <text font-size="17" font-family="ArialMT" template-id="node-text" x="0" y="11" fill="#464646" alignment-baseline="central" font-style="normal" text-decoration="none">Description: This is test tag</text>
+        </g>
+        <g transform="matrix(1 0 0 1 30 49)" widget-name="readButton" eObject-URI="reader.page#/0/@children.0/@children.2">
+          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="482" width="354" />
+          <text font-size="25" font-family="ArialMT" template-id="node-text" x="177" y="241" fill="#446ab3" alignment-baseline="central" text-anchor="middle" font-style="normal" text-decoration="none">Read</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

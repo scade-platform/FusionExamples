@@ -1,0 +1,63 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:lattice="http://scade.com/lattice" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <minArea xsi:type="graphics:Dimension" width="414" height="736"/>
+    <location xsi:type="graphics:Point"/>
+    <backgroundColor xsi:type="graphics:RGB" Red="248" Green="248" Blue="248"/>
+    <children xsi:type="lattice:PageContainer" name="pageContainer1">
+      <location xsi:type="graphics:Point"/>
+      <size xsi:type="graphics:Dimension" width="414" height="706"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" source="/0/@children.0" target="/0/@children.1"/>
+      </layoutData>
+    </children>
+    <children xsi:type="widgets:RowView" name="rowView1">
+      <children xsi:type="widgets:Button" text="Reader" name="readerButton" horizontalAlignment="CENTER">
+        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="5" y="5"/>
+        <size xsi:type="graphics:Dimension" width="202" height="23"/>
+        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
+        <layoutData xsi:type="layout:GridData" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT" grabVerticalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Alpha="127"/>
+      </children>
+      <children xsi:type="widgets:Button" text="Writer" name="writerButton" horizontalAlignment="CENTER" cornerRadius="10">
+        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+          <color xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
+        </font>
+        <location xsi:type="graphics:Point" x="207" y="5"/>
+        <size xsi:type="graphics:Dimension" width="202" height="23"/>
+        <contentSize xsi:type="graphics:Dimension" width="86" height="23"/>
+        <layoutData xsi:type="layout:GridData" column="1" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" widthConstraint="MATCH_PARENT" grabVerticalSpace="true" grabHorizontalSpace="true">
+          <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
+          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
+        </layoutData>
+        <backgroundColor xsi:type="graphics:RGB" Alpha="127"/>
+      </children>
+      <layout xsi:type="layout:GridLayout" columns="2" marginRight="5" marginTop="5" marginBottom="5" marginLeft="5"/>
+      <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
+      <location xsi:type="graphics:Point" y="706"/>
+      <minArea xsi:type="graphics:Dimension"/>
+      <size xsi:type="graphics:Dimension" width="414" height="30"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="BOTTOM" source="/0/@children.1" target="/0/@children.0"/>
+        <constraints xsi:type="layout:Constraint" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="HEIGHT" constant="30" source="/0/@children.1"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea xsi:type="graphics:Dimension" width="414" height="736"/>
+    <size xsi:type="graphics:Dimension" width="414" height="736"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
