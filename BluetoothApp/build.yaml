@@ -79,7 +79,7 @@ android:
   key-store-properties:
   google-api-key:
   manifest-file:
-  permissions: []
+  permissions: ["ACCESS_FINE_LOCATION", "BLUETOOTH", "BLUETOOTH_ADMIN", "ACCESS_COARSE_LOCATION"]
   armeabi-v7a:
     output: BluetoothApp/.build/android-armeabi-v7a
     product-path: BluetoothApp/Product/android-armeabi-v7a
