@@ -78,7 +78,7 @@ android:
   build-type: Debug
   key-store-properties:
   google-api-key:
-  manifest-file:
+  manifest-file: AndroidManifest.xml
   permissions: ["ACCESS_FINE_LOCATION", "BLUETOOTH", "BLUETOOTH_ADMIN", "ACCESS_COARSE_LOCATION"]
   armeabi-v7a:
     output: BluetoothApp/.build/android-armeabi-v7a

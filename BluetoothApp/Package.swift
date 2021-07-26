@@ -20,7 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-		.package(name: "FusionBluetooth", url: "https://github.com/scade-platform/FusionBluetooth.git", .branch("main")),
+		.package(name: "FusionBluetooth", url: "https://github.com/scade-platform/FusionBluetooth.git", .branch("Working")),
     ],
     targets: [
         .target(

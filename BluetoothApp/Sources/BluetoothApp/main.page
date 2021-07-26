@@ -75,6 +75,8 @@
       <size xsi:type="graphics:Dimension" width="410" height="45"/>
       <layoutData xsi:type="layout:AutoLayoutData">
         <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" constant="84" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" constant="2" source="/0/@children.1" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-2" source="/0/@children.1" target="/0"/>
       </layoutData>
     </children>
     <children xsi:type="widgets:ListView" name="listView1">
@@ -145,6 +147,8 @@
       <size xsi:type="graphics:Dimension" width="374" height="184"/>
       <layoutData xsi:type="layout:AutoLayoutData">
         <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" constant="387" source="/0/@children.2" target="/0"/>
+        <constraints xsi:type="layout:Constraint" constant="19" source="/0/@children.2" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-21" source="/0/@children.2" target="/0"/>
       </layoutData>
     </children>
     <children xsi:type="widgets:RowView" name="rowView2">

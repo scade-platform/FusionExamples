@@ -5,8 +5,8 @@
         "package": "FusionBluetooth",
         "repositoryURL": "https://github.com/scade-platform/FusionBluetooth.git",
         "state": {
-          "branch": "main",
-          "revision": "c6fbbc76f2f38043ac63d3cf10f2622fc4cccad4",
+          "branch": "Working",
+          "revision": "e136e6a3953e42a90cc25daada27be437a6d7f9d",
           "version": null
         }
       },
