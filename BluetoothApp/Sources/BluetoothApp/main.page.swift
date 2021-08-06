@@ -48,7 +48,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
                   if device.isConnected {
 	                  self.connectButton.text = "Disconnect"
                   } else {
-	                  self.connectButton.text = "Connect"               	
+	                  self.connectButton.text = "Connect"
                   }
                   self.selectedDevice = device
               }
@@ -57,15 +57,14 @@ class MainPageAdapter: SCDLatticePageAdapter {
     }
     
     func checkState() {
-    	bluetoothManager.checkState() { enabled in 
-    		self.statusLabel.text = enabled ? "Turned on" : "Turned Off"
-    	}
+    	self.statusLabel.text = bluetoothManager.isCentralPoweredOn() ? "Turned on" : "Turned Off"
     }
   
     func discoverDevicesOrStop() {
-        if !bluetoothManager.isScanning() {
-            bluetoothManager.discoverDevice() { peripheral in
+        if !bluetoothManager.isDiscovering() {
+            bluetoothManager.startDiscovering() { peripheral in
                 guard let peripheral = peripheral else { return }
+                print("peripheral name = \(peripheral.name) uuid = \(peripheral.uuid) isConnected = \(peripheral.isConnected)")
                 let device = Device(name: peripheral.name, uuid: peripheral.uuid, isConnected: peripheral.isConnected)
                 if self.deviceArray.first(where: {$0.uuid == device.uuid}) == nil {
                      self.deviceArray.append(device)
