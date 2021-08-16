@@ -25,6 +25,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
       
       discoverButton.onClick.append(SCDWidgetsEventHandler{ _ in self.discoverDevicesOrStop()})
       connectButton.onClick.append(SCDWidgetsEventHandler{ _ in self.connectDisconect()})
+      sendMessageButton.onClick.append(SCDWidgetsEventHandler{ _ in self.sendMessage()})      
       
       self.bluetoothManager.requestAuthorization()
       
@@ -57,7 +58,22 @@ class MainPageAdapter: SCDLatticePageAdapter {
     }
     
     func checkState() {
-    	self.statusLabel.text = bluetoothManager.isCentralPoweredOn() ? "Turned on" : "Turned Off"
+        bluetoothManager.listenToStateEvents() { state in
+            switch state {
+            case .unknown:
+             	self.statusLabel.text = "Unknown"
+            case .resetting:
+              	self.statusLabel.text = "Resetting"
+            case .unsupported:
+              	self.statusLabel.text = "Unsupported"
+            case .unauthorized:
+              	self.statusLabel.text = "Unauthorized"
+            case .poweredOff:
+              	self.statusLabel.text = "Turned Off"
+            case .poweredOn:
+              	self.statusLabel.text = "Turned on"
+            }
+        }
     }
   
     func discoverDevicesOrStop() {
@@ -75,7 +91,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
             discoverButton.text = "Stop"
         } else {
             bluetoothManager.stopDiscovering() 
-            discoverButton.text = "Discover"
+            discoverButton.text = "Scan"
         }
 	}
 	
@@ -99,9 +115,17 @@ class MainPageAdapter: SCDLatticePageAdapter {
 						self.selectedDeviceStateLabel.text = peripheral.isConnected ? "Connected" : "Disconnected"
 						self.connectButton.text = "Disconnect"
 						self.selectedDevice = device
+						
+                        self.bluetoothManager.readCharacteristic(uuid: selectedDevice.uuid) { data in                            self.sendMessageTextField.text = self.bodyLocation(from: data)                        }                                                self.bluetoothManager.notifyCharacteristic(uuid: selectedDevice.uuid) { data in                            self.receivedMessageTextField.text = String(self.heartRate(from: data))                        }						
         			}
 				}
 			}
         }
 	}
+	
+	func sendMessage() {
+        if let data = sendMessageTextField.text.data(using: .utf8), let uuid = selectedDevice?.uuid {            bluetoothManager.writeCharacteristic(uuid: uuid, data: data)        }		
+	}
+	
+    private func bodyLocation(from data: Data?) -> String {      guard let data = data, let byte = data.first else { return "Error" }            switch byte {      case 0: return "Other"      case 1: return "Chest"      case 2: return "Wrist"      case 3: return "Finger"      case 4: return "Hand"      case 5: return "Ear Lobe"      case 6: return "Foot"      default:        return "Reserved for future use"      }    }        private func heartRate(from data: Data?) -> Int {      guard let characteristicData = data else { return -1 }      let byteArray = [UInt8](characteristicData)            let firstBitValue = byteArray[0] & 0x01      if firstBitValue == 0 {        // Heart Rate Value Format is in the 2nd byte        return Int(byteArray[1])      } else {        // Heart Rate Value Format is in the 2nd and 3rd bytes        return (Int(byteArray[1]) << 8) + Int(byteArray[2])      }    }	
 }

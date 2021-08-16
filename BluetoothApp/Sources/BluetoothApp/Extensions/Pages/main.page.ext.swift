@@ -48,4 +48,32 @@ extension MainPageAdapter {
   var statusLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("statusLabel") as! SCDWidgetsLabel
   }
+
+  var verticalView: SCDWidgetsListView {
+    return self.page?.getWidgetByName("verticalView") as! SCDWidgetsListView
+  }
+
+  var horizontalView: SCDWidgetsRowView {
+    return self.page?.getWidgetByName("horizontalView") as! SCDWidgetsRowView
+  }
+
+  var sendMessageTextField: SCDWidgetsTextbox {
+    return self.page?.getWidgetByName("sendMessageTextField") as! SCDWidgetsTextbox
+  }
+
+  var sendMessageButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("sendMessageButton") as! SCDWidgetsButton
+  }
+
+  var listView2: SCDWidgetsListView {
+    return self.page?.getWidgetByName("listView2") as! SCDWidgetsListView
+  }
+
+  var label: SCDWidgetsLabel {
+    return self.page?.getWidgetByName("label") as! SCDWidgetsLabel
+  }
+
+  var receivedMessageTextField: SCDWidgetsTextbox {
+    return self.page?.getWidgetByName("receivedMessageTextField") as! SCDWidgetsTextbox
+  }
 }
