@@ -5,23 +5,15 @@ extension WriterPageAdapter {
     return self.page?.getWidgetByName("listView1") as! SCDWidgetsListView
   }
 
-  var inputUrlLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("inputUrlLabel") as! SCDWidgetsLabel
+  var writeButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("writeButton") as! SCDWidgetsButton
   }
 
   var urlTextBox: SCDWidgetsTextbox {
     return self.page?.getWidgetByName("urlTextBox") as! SCDWidgetsTextbox
   }
 
-  var inputDescriptionLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("inputDescriptionLabel") as! SCDWidgetsLabel
-  }
-
   var descriptionTextBox: SCDWidgetsTextbox {
     return self.page?.getWidgetByName("descriptionTextBox") as! SCDWidgetsTextbox
-  }
-
-  var writeButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("writeButton") as! SCDWidgetsButton
   }
 }

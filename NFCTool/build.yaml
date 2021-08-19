@@ -40,8 +40,8 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Volumes/Work/Work/Ongoing_Project/Scade/Data/Provision/NFCTool_Adhoc.mobileprovision
-    certificate: /Volumes/Work/Work/Ongoing_Project/Scade/Data/Provision/ScadeAdHoc.p12
+    provision-profile: 
+    certificate: 
   icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
       60X60_2X:

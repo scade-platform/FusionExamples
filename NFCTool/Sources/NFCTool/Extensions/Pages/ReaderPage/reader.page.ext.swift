@@ -5,15 +5,15 @@ extension ReaderPageAdapter {
     return self.page?.getWidgetByName("listView1") as! SCDWidgetsListView
   }
 
+  var readButton: SCDWidgetsButton {
+    return self.page?.getWidgetByName("readButton") as! SCDWidgetsButton
+  }
+
   var urlLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("urlLabel") as! SCDWidgetsLabel
   }
 
   var descriptionLabel: SCDWidgetsLabel {
     return self.page?.getWidgetByName("descriptionLabel") as! SCDWidgetsLabel
-  }
-
-  var readButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("readButton") as! SCDWidgetsButton
   }
 }
