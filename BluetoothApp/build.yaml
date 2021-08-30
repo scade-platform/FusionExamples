@@ -40,8 +40,8 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: /Volumes/Work/Pavlo/SCADE/ScadeFusion_Adhoc_Prov.mobileprovision
-    certificate: /Volumes/Work/Pavlo/SCADE/ScadeFusion_Adhoc.p12
+    provision-profile: /Volumes/Work/Work/Ongoing_Project/Scade/Data/Provision/ScadeFusion_Adhoc_Prov.mobileprovision
+    certificate: /Volumes/Work/Work/Ongoing_Project/Scade/Data/Provision/ScadeFusion_Adhoc.p12
   icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
       60X60_2X:
@@ -78,7 +78,7 @@ android:
   build-type: Debug
   key-store-properties:
   google-api-key:
-  manifest-file: AndroidManifest.xml
+  manifest-file:
   permissions: ["ACCESS_FINE_LOCATION", "BLUETOOTH", "BLUETOOTH_ADMIN", "ACCESS_COARSE_LOCATION"]
   armeabi-v7a:
     output: BluetoothApp/.build/android-armeabi-v7a
