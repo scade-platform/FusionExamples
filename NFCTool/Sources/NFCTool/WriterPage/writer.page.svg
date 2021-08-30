@@ -4,30 +4,24 @@
     <rect width="100%" height="100%" fill="#f8f8f8" />
   </svg>
   <g template-id="content">
-    <g eObject-URI="writer.page#/0/@children.0" widget-name="listView1">
-      <svg template-id="background" width="414" height="736" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+    <g widget-name="listView1" eObject-URI="writer.page#/0/@children.0" transform="matrix(1 0 0 1 0 218)">
+      <svg template-id="background" width="414" height="300" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
       <g template-id="content">
-        <g eObject-URI="writer.page#/0/@children.0/@children.0" widget-name="inputUrlLabel" transform="matrix(1 0 0 1 30 50)">
-          <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-          <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">URL</text>
-        </g>
-        <g eObject-URI="writer.page#/0/@children.0/@children.1" widget-name="urlTextBox" transform="matrix(1 0 0 1 30 72)">
-          <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-          <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" editable="true" template-id="node-text" inputTextWidth="354" x="0" y="11" fill="#bfbfbf">Input the URL</text>
-        </g>
-        <g eObject-URI="writer.page#/0/@children.0/@children.2" widget-name="inputDescriptionLabel" transform="matrix(1 0 0 1 30 94)">
-          <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-          <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">Description</text>
-        </g>
-        <g eObject-URI="writer.page#/0/@children.0/@children.3" widget-name="descriptionTextBox" transform="matrix(1 0 0 1 30 116)">
-          <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-          <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" editable="true" template-id="node-text" inputTextWidth="354" x="0" y="11" fill="#bfbfbf">Input the description</text>
-        </g>
-        <g eObject-URI="writer.page#/0/@children.0/@children.4" widget-name="writeButton" transform="matrix(1 0 0 1 30 138)">
-          <svg template-id="background" width="354" height="593" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
-          <text text-anchor="middle" alignment-baseline="central" font-size="25" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="177" y="296.5" fill="#446ab3">Write</text>
+        <g widget-name="writeButton" eObject-URI="writer.page#/0/@children.0/@children.0" transform="matrix(1 0 0 1 30 50)">
+          <svg template-id="background" width="354" height="220" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+            <rect stroke-width="7" stroke-dasharray="5" width="100%" height="100%" fill="#ffffff" stroke="#424142" />
+          </svg>
+          <text text-anchor="middle" alignment-baseline="central" font-size="25" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="177" y="110" fill="#0">Hold NFC tag for writing</text>
         </g>
       </g>
+    </g>
+    <g widget-name="urlTextBox" eObject-URI="writer.page#/0/@children.1" transform="matrix(1 0 0 1 30 84)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" editable="true" template-id="node-text" inputTextWidth="354" x="0" y="11" fill="#bfbfbf">Type the URL</text>
+    </g>
+    <g widget-name="descriptionTextBox" eObject-URI="writer.page#/0/@children.2" transform="matrix(1 0 0 1 30 116)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" editable="true" template-id="node-text" inputTextWidth="354" x="0" y="11" fill="#bfbfbf">Type the description</text>
     </g>
   </g>
 </svg>

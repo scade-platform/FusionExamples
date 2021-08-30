@@ -4,22 +4,24 @@
     <rect width="100%" height="100%" fill="#f8f8f8" />
   </svg>
   <g template-id="content">
-    <g transform="matrix(1 0 0 1 0 200)" widget-name="listView1" eObject-URI="reader.page#/0/@children.0">
-      <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="536" width="414" />
+    <g widget-name="listView1" eObject-URI="reader.page#/0/@children.0" transform="matrix(1 0 0 1 0 218)">
+      <svg template-id="background" width="414" height="300" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
       <g template-id="content">
-        <g transform="matrix(1 0 0 1 30 5)" widget-name="urlLabel" eObject-URI="reader.page#/0/@children.0/@children.0">
-          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="22" width="354" />
-          <text font-size="17" font-family="ArialMT" template-id="node-text" x="0" y="11" fill="#464646" alignment-baseline="central" font-style="normal" text-decoration="none">URL: http://google.com</text>
-        </g>
-        <g transform="matrix(1 0 0 1 30 27)" widget-name="descriptionLabel" eObject-URI="reader.page#/0/@children.0/@children.1">
-          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="22" width="354" />
-          <text font-size="17" font-family="ArialMT" template-id="node-text" x="0" y="11" fill="#464646" alignment-baseline="central" font-style="normal" text-decoration="none">Description: This is test tag</text>
-        </g>
-        <g transform="matrix(1 0 0 1 30 49)" widget-name="readButton" eObject-URI="reader.page#/0/@children.0/@children.2">
-          <svg template-id="background" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" height="482" width="354" />
-          <text font-size="25" font-family="ArialMT" template-id="node-text" x="177" y="241" fill="#446ab3" alignment-baseline="central" text-anchor="middle" font-style="normal" text-decoration="none">Read</text>
+        <g widget-name="readButton" eObject-URI="reader.page#/0/@children.0/@children.0" transform="matrix(1 0 0 1 30 40)">
+          <svg template-id="background" width="354" height="230" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+            <rect stroke-width="7" stroke-dasharray="5" width="100%" height="100%" fill="#feffff" stroke="#424242" />
+          </svg>
+          <text text-anchor="middle" alignment-baseline="central" font-size="25" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="177" y="115" fill="#0">Hold NFC tag for reading</text>
         </g>
       </g>
+    </g>
+    <g widget-name="urlLabel" eObject-URI="reader.page#/0/@children.1" transform="matrix(1 0 0 1 30 84)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">URL: </text>
+    </g>
+    <g widget-name="descriptionLabel" eObject-URI="reader.page#/0/@children.2" transform="matrix(1 0 0 1 30 116)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">Description: </text>
     </g>
   </g>
 </svg>

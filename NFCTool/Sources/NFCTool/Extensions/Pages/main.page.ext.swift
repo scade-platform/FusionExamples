@@ -5,15 +5,31 @@ extension MainPageAdapter {
     return self.page?.getWidgetByName("pageContainer1") as! SCDLatticePageContainer
   }
 
-  var rowView1: SCDWidgetsRowView {
-    return self.page?.getWidgetByName("rowView1") as! SCDWidgetsRowView
+  var toolbar: SCDWidgetsToolBar {
+    return self.page?.getWidgetByName("toolbar") as! SCDWidgetsToolBar
   }
 
-  var readerButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("readerButton") as! SCDWidgetsButton
+  var readerButton: SCDWidgetsListView {
+    return self.page?.getWidgetByName("readerButton") as! SCDWidgetsListView
   }
 
-  var writerButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("writerButton") as! SCDWidgetsButton
+  var image: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image") as! SCDWidgetsImage
+  }
+
+  var button1: SCDWidgetsButton {
+    return self.page?.getWidgetByName("button1") as! SCDWidgetsButton
+  }
+
+  var writerButton: SCDWidgetsListView {
+    return self.page?.getWidgetByName("writerButton") as! SCDWidgetsListView
+  }
+
+  var image1: SCDWidgetsImage {
+    return self.page?.getWidgetByName("image1") as! SCDWidgetsImage
+  }
+
+  var button: SCDWidgetsButton {
+    return self.page?.getWidgetByName("button") as! SCDWidgetsButton
   }
 }

@@ -5,53 +5,53 @@
     <location xsi:type="graphics:Point"/>
     <backgroundColor xsi:type="graphics:RGB" Red="248" Green="248" Blue="248"/>
     <children xsi:type="widgets:ListView" name="listView1">
-      <children xsi:type="widgets:Label" text="URL: http://google.com" name="urlLabel">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="30" y="5"/>
-        <size xsi:type="graphics:Dimension" width="354" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="174" height="22"/>
-      </children>
-      <children xsi:type="widgets:Label" text="Description: This is test tag" name="descriptionLabel">
-        <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
-          <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
-        </font>
-        <layoutData xsi:type="layout:GridData" row="1" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" grabHorizontalSpace="true" widthConstraint="MATCH_PARENT">
-          <minSize xsi:type="graphics:Dimension" width="44" height="22"/>
-          <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
-        </layoutData>
-        <location xsi:type="graphics:Point" x="30" y="27"/>
-        <size xsi:type="graphics:Dimension" width="354" height="22"/>
-        <contentSize xsi:type="graphics:Dimension" width="204" height="22"/>
-      </children>
-      <children xsi:type="widgets:Button" text="Read" name="readButton" horizontalAlignment="CENTER">
+      <children xsi:type="widgets:Button" text="Hold NFC tag for reading" name="readButton" horizontalAlignment="CENTER">
         <font xsi:type="graphics:Font" fontFamily="ArialMT" size="25">
-          <color xsi:type="graphics:RGB" Red="68" Green="106" Blue="179"/>
+          <color xsi:type="graphics:RGB"/>
         </font>
+        <location xsi:type="graphics:Point" x="30" y="40"/>
+        <size xsi:type="graphics:Dimension" width="354" height="230"/>
+        <contentSize xsi:type="graphics:Dimension" width="278" height="29"/>
         <layoutData xsi:type="layout:GridData" row="2" horizontalAlignment="CENTER" verticalAlignment="MIDDLE" heightConstraint="MATCH_PARENT" grabHorizontalSpace="true" grabVerticalSpace="true" widthConstraint="MATCH_PARENT">
           <minSize xsi:type="graphics:Dimension" width="86" height="23"/>
           <maxSize xsi:type="graphics:Dimension" width="-1" height="-1"/>
         </layoutData>
-        <location xsi:type="graphics:Point" x="30" y="49"/>
-        <size xsi:type="graphics:Dimension" width="354" height="482"/>
-        <contentSize xsi:type="graphics:Dimension" width="86" height="29"/>
+        <backgroundColor xsi:type="graphics:RGB" Red="254" Green="255" Blue="255"/>
       </children>
-      <layout xsi:type="layout:GridLayout" rows="3" marginTop="5" marginBottom="5" marginLeft="30" marginRight="30"/>
+      <layout xsi:type="layout:GridLayout" rows="3" verticalSpacing="5" marginTop="30" marginBottom="30" marginLeft="30" marginRight="30"/>
       <maxArea xsi:type="graphics:Dimension" width="-1" height="-1"/>
-      <location xsi:type="graphics:Point" y="200"/>
+      <location xsi:type="graphics:Point" y="218"/>
       <minArea xsi:type="graphics:Dimension"/>
-      <size xsi:type="graphics:Dimension" width="414" height="536"/>
+      <size xsi:type="graphics:Dimension" width="414" height="300"/>
       <layoutData xsi:type="layout:AutoLayoutData">
-        <constraints xsi:type="layout:Constraint" sourceAnchor="TOP" targetAnchor="TOP" constant="200" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="RIGHT" targetAnchor="RIGHT" source="/0/@children.0" target="/0"/>
-        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="BOTTOM" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="HEIGHT" constant="300" source="/0/@children.0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0" target="/0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="CENTER_Y" targetAnchor="CENTER_Y" source="/0/@children.0" target="/0"/>
       </layoutData>
+    </children>
+    <children xsi:type="widgets:Label" text="URL: " name="urlLabel">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+        <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-10" source="/0/@children.1" target="/0/@children.2"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="30" y="84"/>
+      <size xsi:type="graphics:Dimension" width="354" height="22"/>
+      <contentSize xsi:type="graphics:Dimension" width="39" height="19"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Description: " name="descriptionLabel">
+      <font xsi:type="graphics:Font" fontFamily="ArialMT" size="17">
+        <color xsi:type="graphics:RGB" Red="70" Green="70" Blue="70"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints xsi:type="layout:Constraint" sourceAnchor="BOTTOM" targetAnchor="TOP" constant="-80" source="/0/@children.2" target="/0/@children.0"/>
+        <constraints xsi:type="layout:Constraint" sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.2" target="/0"/>
+      </layoutData>
+      <location xsi:type="graphics:Point" x="30" y="116"/>
+      <size xsi:type="graphics:Dimension" width="354" height="22"/>
+      <contentSize xsi:type="graphics:Dimension" width="90" height="19"/>
     </children>
     <layout xsi:type="layout:AutoLayout"/>
     <maxArea xsi:type="graphics:Dimension" width="414" height="736"/>
