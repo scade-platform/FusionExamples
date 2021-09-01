@@ -31,7 +31,7 @@
 
         </activity>
         
-        <receiver android:name="FusionNFC_Android.NFCReceiver"/>
+        <receiver android:name="com.FusionNFC_Android.NFCReceiver"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
