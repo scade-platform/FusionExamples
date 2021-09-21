@@ -1,2 +1,2 @@
-package BluetoothApp;
+package com.BluetoothApp;
 

@@ -2,7 +2,7 @@ import ScadeKit
 import FusionBluetooth
 import Foundation
 
-class Device: EObject {
+class BTDevice: EObject {
     let name: String?
     let uuid: String
     var isConnected: Bool
@@ -16,9 +16,10 @@ class Device: EObject {
 
 class MainPageAdapter: SCDLatticePageAdapter {
 
-	let bluetoothManager = BluetoothManager()
+	let bluetoothManager = BluetoothManager.shared
 
 	private var deviceArray: [Device] = []
+	private var btDeviceArray: [BTDevice] = []
 	private var selectedDevice: Device? = nil
    
     override func load(_ path: String) {
@@ -28,7 +29,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
         connectButton.onClick.append(SCDWidgetsEventHandler{ _ in self.connectDisconect()})
         sendMessageButton.onClick.append(SCDWidgetsEventHandler{ _ in self.sendMessage()})
         
-        self.devicesList.elementProvider = SCDWidgetsElementProvider { (device: Device, template) in
+        self.devicesList.elementProvider = SCDWidgetsElementProvider { (device: BTDevice, template) in
             var nameText = device.name
             if nameText == nil || nameText == "" {
                 nameText = device.uuid
@@ -39,16 +40,18 @@ class MainPageAdapter: SCDLatticePageAdapter {
         
         self.devicesList.onItemSelected.append(
             SCDWidgetsItemSelectedEventHandler { ev in
-                if let device = ev!.item as? Device {
-                    self.selectedDeviceNameLabel.text = "Name: \(device.name ?? "")"
-                    self.selectedDeviceUuidLabel.text = "UUID: \(device.uuid)"
-                    self.selectedDeviceStateLabel.text = "State: \(device.isConnected ? "Connected" : "Disconnected")"
-                    if device.isConnected {
+                if let btDevice = ev!.item as? BTDevice {
+                    self.selectedDeviceNameLabel.text = "Name: \(btDevice.name ?? "")"
+                    self.selectedDeviceUuidLabel.text = "UUID: \(btDevice.uuid)"
+                    self.selectedDeviceStateLabel.text = "State: \(btDevice.isConnected ? "Connected" : "Disconnected")"
+                    if btDevice.isConnected {
                         self.connectButton.text = "Disconnect"
                     } else {
                         self.connectButton.text = "Connect"
                     }
-                    self.selectedDevice = device
+                    if let device = self.deviceArray.first(where: {$0.uuid == btDevice.uuid}) {
+                    	self.selectedDevice = device	
+                    }                    
                 }
              }
           )
@@ -67,10 +70,11 @@ class MainPageAdapter: SCDLatticePageAdapter {
                 }
                 return
             }
-    		let device = Device(name: peripheral.name, uuid: peripheral.uuid, isConnected: peripheral.isConnected)
-            if self.deviceArray.first(where: {$0.uuid == device.uuid}) == nil {
-				self.deviceArray.append(device)
-				self.devicesList.items = self.deviceArray
+    		let btDevice = BTDevice(name: peripheral.name, uuid: peripheral.uuid, isConnected: peripheral.isConnected)
+            if self.deviceArray.first(where: {$0.uuid == peripheral.uuid}) == nil {
+				self.deviceArray.append(peripheral)
+				self.btDeviceArray.append(btDevice)
+				self.devicesList.items = self.btDeviceArray
             }
         }
 	}
@@ -78,29 +82,29 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	func connectDisconect() {
         if let selectedDevice = self.selectedDevice {
             if selectedDevice.isConnected {
-                bluetoothManager.disconnectDevice(uuid: selectedDevice.uuid) { peripheral, error in
-                    guard let peripheral = peripheral, let device = self.deviceArray.first(where: { peripheral.uuid == $0.uuid }) else { return }
-                    device.isConnected = false                    
-                    self.selectedDeviceStateLabel.text = device.isConnected ? "Connected" : "Disconnected"
+                selectedDevice.disconnect { success, error in
+                    guard success else { return }
+//                    device.isConnected = false
+                    self.selectedDeviceStateLabel.text = "Connected"
                     self.connectButton.text = "Connect"
-                    self.selectedDevice = device
+//                    self.selectedDevice = device
                     
                     self.sendMessageTextField.text = ""
                     self.receivedMessageTextField.text = ""
                 }
             } else {
-                bluetoothManager.connectDevice(uuid: selectedDevice.uuid) { peripheral, error in
-                    guard let peripheral = peripheral, let device = self.deviceArray.first(where: { peripheral.uuid == $0.uuid }) else { return }
-                    device.isConnected = true
-                    self.selectedDeviceStateLabel.text = device.isConnected ? "Connected" : "Disconnected"
+                selectedDevice.connect { success, error in
+                    guard success else { return }
+//                    device.isConnected = true
+                    self.selectedDeviceStateLabel.text = "Disconnected"
                     self.connectButton.text = "Disconnect"
-                    self.selectedDevice = device
+//                    self.selectedDevice = device
                     
-                    self.bluetoothManager.readCharacteristic(uuid: device.uuid) { data in
+                    selectedDevice.read { data in
                         self.sendMessageTextField.text = self.bodyLocation(from: data)
                     }
                     
-                    self.bluetoothManager.notifyCharacteristic(uuid: device.uuid) { data in
+                    selectedDevice.notify { data in
                         self.receivedMessageTextField.text = String(self.heartRate(from: data))
                     }
                 }
@@ -109,8 +113,8 @@ class MainPageAdapter: SCDLatticePageAdapter {
 	}
 	
 	func sendMessage() {
-        if let data = sendMessageTextField.text.data(using: .utf8), let uuid = selectedDevice?.uuid {
-            bluetoothManager.writeCharacteristic(uuid: uuid, data: data)
+        if let data = sendMessageTextField.text.data(using: .utf8), let selectedDevice = selectedDevice {
+            selectedDevice.write(data: data)
         }		
 	}
 	
