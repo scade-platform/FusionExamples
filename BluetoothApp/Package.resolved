@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FusionBluetooth",
+        "repositoryURL": "https://github.com/scade-platform/FusionBluetooth.git",
+        "state": {
+          "branch": "light",
+          "revision": "e94df3ce92c9636bd1ad675f79e1ddaa72c46b18",
+          "version": null
+        }
+      },
+      {
+        "package": "Android",
+        "repositoryURL": "https://github.com/scade-platform/swift-android.git",
+        "state": {
+          "branch": "android/24",
+          "revision": "d20d4c4948b3bc6f4f54fa3f2c9023ede32d7f7b",
+          "version": null
+        }
+      },
+      {
+        "package": "Java",
+        "repositoryURL": "https://github.com/scade-platform/swift-java.git",
+        "state": {
+          "branch": "main",
+          "revision": "f433aa076a60391346a3f4b51408307e0a613325",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
