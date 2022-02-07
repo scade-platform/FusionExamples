@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FusionCamera",
+        "repositoryURL": "https://github.com/scade-platform/FusionCamera.git",
+        "state": {
+          "branch": "main",
+          "revision": "728d4081bb81163cb7cbab19b418fd421b448116",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

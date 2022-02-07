@@ -1,0 +1,35 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:native="http://scade.com/sdk/view/widgets/native" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <minArea width="320" height="480"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="native:VideoCaptureView" name="videoCaptureView">
+      <location x="16" y="30"/>
+      <size width="292" height="380"/>
+      <layoutData xsi:type="layout:AutoLayoutData"/>
+    </children>
+    <children xsi:type="widgets:Button" text="start" name="button" horizontalAlignment="CENTER">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="68" Green="106" Blue="179"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData"/>
+      <location x="20" y="431"/>
+      <size width="86" height="23"/>
+      <contentSize width="34" height="19"/>
+    </children>
+    <children xsi:type="widgets:Button" text="stop" name="button1" horizontalAlignment="CENTER">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="68" Green="106" Blue="179"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData"/>
+      <location x="187" y="429"/>
+      <size width="86" height="23"/>
+      <contentSize width="33" height="19"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="320" height="480"/>
+    <size width="320" height="480"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
