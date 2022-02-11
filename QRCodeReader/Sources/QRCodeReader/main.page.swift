@@ -18,8 +18,15 @@ class MainPageAdapter: SCDLatticePageAdapter {
     self.button1.onClick { [weak self] _ in
       self?.videoCaptureView.stop()
     }
-    
-    self.camera?.setup { [weak self] data in
+
+    // vanilla API:
+    // self.camera?.registerCaptureOutput(.qrCode { [weak self] data in
+    //   print(data)
+    //   self?.videoCaptureView.stop()
+    // })
+
+    // syntax sugar API:
+    self.camera?.captureQRCode { [weak self] data in
       print(data)
       self?.videoCaptureView.stop()
     }
