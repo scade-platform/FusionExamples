@@ -13,7 +13,7 @@ linked-libs: []
 
 ios:
   name: NFCTool
-  id: com.scadefusion.nfc
+  id: com.scadefusion.nfc.vedant
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -40,8 +40,8 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile: 
-    certificate: 
+    provision-profile: /Users/vj/Desktop/certs/vj.mobileprovision
+    certificate: /Users/vj/Desktop/certs/vj.p12
   icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
       60X60_2X:

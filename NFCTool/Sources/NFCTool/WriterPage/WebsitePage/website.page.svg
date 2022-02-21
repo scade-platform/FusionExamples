@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" eObject-URI="website.page#/0" widget-name="website" width="414" height="736">
+  <svg template-id="background" width="414" height="736" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+    <rect width="100%" height="100%" fill="#f8f8f8" />
+  </svg>
+  <g template-id="content">
+    <g eObject-URI="website.page#/0/@children.0" widget-name="image" transform="matrix(1 0 0 1 157 100)">
+      <svg template-id="background" width="100" height="100" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <image xlink:href="Assets/website.png" template-id="node-image" width="100" height="100" constraints="direct!http://scade.com/svg/draw#//Image/height|size.h;direct!http://scade.com/svg/draw#//Image/width|size.w" />
+    </g>
+    <g widget-name="label" eObject-URI="website.page#/0/@children.1" transform="matrix(1 0 0 1 70 227)">
+      <svg template-id="background" width="234" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">Write NFC Tag: Website</text>
+    </g>
+    <g eObject-URI="website.page#/0/@children.2" widget-name="desc_textbox" transform="matrix(1 0 0 1 72 341)">
+      <svg template-id="background" width="266" height="55" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" inputTextWidth="266" editable="true" template-id="node-text" x="0" y="27.5" fill="#0" />
+    </g>
+    <g widget-name="write_nfc_btn" eObject-URI="website.page#/0/@children.3" transform="matrix(1 0 0 1 90 512)">
+      <svg template-id="background" width="231" height="32" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+        <rect width="100%" height="100%" fill="#ff75a6" />
+      </svg>
+      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="115.5" y="16" fill="#446ab3">Write to NFC tag</text>
+    </g>
+    <g eObject-URI="website.page#/0/@children.4" widget-name="website_textbox" transform="matrix(1 0 0 1 67 272)">
+      <svg template-id="background" width="278" height="55" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="18" font-family="ArialMT" font-style="normal" text-decoration="none" inputTextWidth="278" editable="true" template-id="node-text" x="0" y="27.5" fill="#0" />
+    </g>
+  </g>
+</svg>

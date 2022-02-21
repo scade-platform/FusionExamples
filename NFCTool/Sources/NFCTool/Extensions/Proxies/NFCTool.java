@@ -1,2 +1,2 @@
-package NFCTool;
+package com.NFCTool;
 
