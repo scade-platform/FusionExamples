@@ -20,12 +20,14 @@ let package = Package(
         )
     ],
     dependencies: [
-      	.package(name: "FusionNFC", url: "https://github.com/scade-platform/FusionNFC.git", .branch("main"))
+      	.package(name: "FusionNFC", url: "https://github.com/6vedant/FusionNFC.git", .branch("FusionNFC_enhance")),
+      	.package(name: "ScadeExtensions", url: "https://github.com/scade-platform/ScadeExtensions", .branch("main")),
     ],
     targets: [
         .target(
             name: "NFCTool",
             dependencies: [
+            	"ScadeExtensions",
             	.product(name: "FusionNFC", package: "FusionNFC")
             ],
             exclude: ["main.page"],

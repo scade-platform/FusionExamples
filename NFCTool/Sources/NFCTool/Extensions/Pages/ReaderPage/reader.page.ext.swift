@@ -1,19 +1,11 @@
 import ScadeKit
 
 extension ReaderPageAdapter {
-  var listView1: SCDWidgetsListView {
-    return self.page?.getWidgetByName("listView1") as! SCDWidgetsListView
+  var category_list: SCDWidgetsList {
+    return self.page?.getWidgetByName("category_list") as! SCDWidgetsList
   }
 
-  var readButton: SCDWidgetsButton {
-    return self.page?.getWidgetByName("readButton") as! SCDWidgetsButton
-  }
-
-  var urlLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("urlLabel") as! SCDWidgetsLabel
-  }
-
-  var descriptionLabel: SCDWidgetsLabel {
-    return self.page?.getWidgetByName("descriptionLabel") as! SCDWidgetsLabel
+  var read_nfc_button: SCDWidgetsButton {
+    return self.page?.getWidgetByName("read_nfc_button") as! SCDWidgetsButton
   }
 }
