@@ -1,43 +1,41 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "FusionNFC",
-        "repositoryURL": "https://github.com/scade-platform/FusionNFC.git",
-        "state": {
-          "branch": "main",
-          "revision": "4a5e008b1ad443789e8339a447ce7cecf3503d33",
-          "version": null
-        }
-      },
-      {
-        "package": "ScadeExtensions",
-        "repositoryURL": "https://github.com/scade-platform/ScadeExtensions",
-        "state": {
-          "branch": "main",
-          "revision": "5e06e9b10f2ff0466d7b242454618ea55d15bac4",
-          "version": null
-        }
-      },
-      {
-        "package": "Android",
-        "repositoryURL": "https://github.com/scade-platform/swift-android.git",
-        "state": {
-          "branch": "android/24",
-          "revision": "d20d4c4948b3bc6f4f54fa3f2c9023ede32d7f7b",
-          "version": null
-        }
-      },
-      {
-        "package": "Java",
-        "repositoryURL": "https://github.com/scade-platform/swift-java.git",
-        "state": {
-          "branch": "main",
-          "revision": "f433aa076a60391346a3f4b51408307e0a613325",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "fusionnfc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scade-platform/FusionNFC.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f6085be7697dafa6cd8c3ffcedf271320dfc4ff6"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "scadeextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scade-platform/ScadeExtensions",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7b1ceff7824ad95388d6634bc533b844f064dc56"
+      }
+    },
+    {
+      "identity" : "swift-android",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scade-platform/swift-android.git",
+      "state" : {
+        "branch" : "android/24",
+        "revision" : "510ee0dacb085c532c330377d25dff6ad23c3b5f"
+      }
+    },
+    {
+      "identity" : "swift-java",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scade-platform/swift-java.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6b2cf43f63cc5959978caee931c487d07f7d9c03"
+      }
+    }
+  ],
+  "version" : 2
 }
