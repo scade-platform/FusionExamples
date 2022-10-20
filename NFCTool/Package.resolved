@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "FusionNFC",
-        "repositoryURL": "https://github.com/6vedant/FusionNFC.git",
+        "repositoryURL": "https://github.com/scade-platform/FusionNFC.git",
         "state": {
-          "branch": "FusionNFC_enhance",
-          "revision": "cd256fc4f50483cb0643d1d21c5ac7681a6b5cd5",
+          "branch": "main",
+          "revision": "4a5e008b1ad443789e8339a447ce7cecf3503d33",
           "version": null
         }
       },
