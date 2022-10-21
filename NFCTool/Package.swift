@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.3
 
 import PackageDescription
 import Foundation
@@ -20,8 +20,8 @@ let package = Package(
         )
     ],
     dependencies: [
-      .package(url: "https://github.com/scade-platform/FusionNFC.git", branch: "main"),
-      .package(url: "https://github.com/scade-platform/ScadeExtensions", branch: "main"),
+      	.package(name: "FusionNFC", url: "https://github.com/scade-platform/FusionNFC.git", .branch("main")),
+      	.package(name: "ScadeExtensions", url: "https://github.com/scade-platform/ScadeExtensions", .branch("main")),
     ],
     targets: [
         .target(
