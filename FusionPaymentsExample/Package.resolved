@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FusionPayments",
+        "repositoryURL": "https://github.com/scade-platform/FusionPayments.git",
+        "state": {
+          "branch": "feature/ios_impl",
+          "revision": "f331e3165d3e3f5ba7349875a9d828bba7cac841",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
