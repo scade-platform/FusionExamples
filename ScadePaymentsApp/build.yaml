@@ -12,8 +12,8 @@ search-paths: []
 linked-libs: []
 
 ios:
-  name: FusionPayments3
-  id: com.scade.fusionpayments3
+  name: ScadePaymentsApp
+  id: com.scade.scadepaymentsapp
   device-family: iphone # iphone, ipad or universal
   supported-interface-orientations: ['portrait'] # portrait, upside_down, landscape_left or landscape_right
   supported-interface-orientationsiPad: ['portrait']
@@ -22,20 +22,20 @@ ios:
   export-method: ad-hoc # app-store, enterprise or development
   simulator:
     os: 12.1
-    output: FusionPayments3/.build/ios-simulator
+    output: ScadePaymentsApp/.build/ios-simulator
     extra-args:
     search-paths: []
     linked-libs: []
   device:
     os: 12.1
-    output: FusionPayments3/.build/ios-device
-    product-path: FusionPayments3/Product/ios-device
+    output: ScadePaymentsApp/.build/ios-device
+    product-path: ScadePaymentsApp/Product/ios-device
     extra-args:
     search-paths: []
     linked-libs: []
   mac:
     os: 10.11
-    output:  FusionPayments3/.build/scade-simulator
+    output:  ScadePaymentsApp/.build/scade-simulator
     extra-args:
     search-paths: []
     linked-libs: []
@@ -58,8 +58,8 @@ ios:
     NSPhotoLibraryUsageDescription: Choose a photo from your library
 
 android:
-  name: FusionPayments3
-  id: com.scade.fusionpayments3
+  name: ScadePaymentsApp
+  id: com.scade.scadepaymentsapp
   version-name: 1.0.0
   version-code: 1
   build-type: Debug
@@ -68,26 +68,26 @@ android:
   manifest-file:
   permissions: []
   armeabi-v7a:
-    output: FusionPayments3/.build/android-armeabi-v7a
-    product-path: FusionPayments3/Product/android-armeabi-v7a
+    output: ScadePaymentsApp/.build/android-armeabi-v7a
+    product-path: ScadePaymentsApp/Product/android-armeabi-v7a
     extra-args:
     search-paths: []
     linked-libs: []
   arm64-v8a:
-    output: FusionPayments3/.build/android-arm64-v8a
-    product-path: FusionPayments3/Product/android-arm64-v8a
+    output: ScadePaymentsApp/.build/android-arm64-v8a
+    product-path: ScadePaymentsApp/Product/android-arm64-v8a
     extra-args:
     search-paths: []
     linked-libs: []
   x86:
-    output: FusionPayments3/.build/android-x86
-    product-path: FusionPayments3/Product/android-x86
+    output: ScadePaymentsApp/.build/android-x86
+    product-path: ScadePaymentsApp/Product/android-x86
     extra-args:
     search-paths: []
     linked-libs: []
   x86_64:
-    output: FusionPayments3/.build/android-x86_64
-    product-path: FusionPayments3/Product/android-x86_64
+    output: ScadePaymentsApp/.build/android-x86_64
+    product-path: ScadePaymentsApp/Product/android-x86_64
     extra-args:
     search-paths: []
     linked-libs: []

@@ -1,0 +1,46 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmi:id="0.6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="main">
+    <minArea width="430" height="932"/>
+    <location/>
+    <backgroundColor Red="108" Green="204" Blue="248"/>
+    <children xsi:type="widgets:Button" text="Pay using FusionPay" horizontalAlignment="CENTER" paddingTop="12" paddingRight="39" paddingLeft="43" paddingBottom="16" name="button">
+      <font fontFamily="ArialMT" size="24">
+        <color/>
+      </font>
+      <location x="61" y="450"/>
+      <size width="308" height="56"/>
+      <contentSize width="226" height="28"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.0" target="/0"/>
+      </layoutData>
+      <backgroundColor Red="9" Green="162" Blue="255"/>
+    </children>
+    <children xsi:type="widgets:Container" name="container">
+      <minArea/>
+      <location x="27" y="68"/>
+      <backgroundColor Red="107" Green="238" Blue="255"/>
+      <children xsi:type="widgets:Label" text="Fusion Payments Example: iOS" name="label">
+        <font fontFamily="ArialMT" size="24">
+          <color Red="19" Green="19" Blue="19"/>
+        </font>
+        <layoutData xsi:type="layout:AutoLayoutData">
+          <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1/@children.0" target="/0/@children.1"/>
+        </layoutData>
+        <location x="19" y="27"/>
+        <size width="339" height="28"/>
+        <contentSize width="339" height="28"/>
+      </children>
+      <layout xsi:type="layout:AutoLayout"/>
+      <maxArea width="-1" height="-1"/>
+      <size width="377" height="87"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="CENTER_X" targetAnchor="CENTER_X" source="/0/@children.1" target="/0"/>
+      </layoutData>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="430" height="932"/>
+    <size width="430" height="932"/>
+  </widgets:Page>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>

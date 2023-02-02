@@ -6,32 +6,31 @@ import Foundation
 let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 
 let package = Package(
-    name: "FusionPayments3",
+    name: "ScadePaymentsApp",
     platforms: [
         .macOS(.v10_14)
     ],
     products: [
         .library(
-            name: "FusionPayments3",
+            name: "ScadePaymentsApp",
             type: .static,
             targets: [
-                "FusionPayments3"
+                "ScadePaymentsApp"
             ]
         )
     ],
-    dependencies: [
+   dependencies: [
     .package(
       name: "FusionPayments", url: "https://github.com/scade-platform/FusionPayments.git",
-      .branch("feature/ios_impl")),
+      .branch("main")),
    
   ],
     targets: [
         .target(
-            name: "FusionPayments3",
-           dependencies: [
-        .product(name: "FusionPayments", package: "FusionPayments"),
-      ],
-
+            name: "ScadePaymentsApp",
+            dependencies: [
+            	.product(name: "FusionPayments", package: "FusionPayments"),
+            ],
             exclude: ["main.page"],
             swiftSettings: [
                 .unsafeFlags(["-F", SCADE_SDK], .when(platforms: [.macOS, .iOS])),

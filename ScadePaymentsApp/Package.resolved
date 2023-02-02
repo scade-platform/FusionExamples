@@ -5,8 +5,8 @@
         "package": "FusionPayments",
         "repositoryURL": "https://github.com/scade-platform/FusionPayments.git",
         "state": {
-          "branch": "feature/ios_impl",
-          "revision": "f331e3165d3e3f5ba7349875a9d828bba7cac841",
+          "branch": "main",
+          "revision": "b8c1bfe335f4e40bb456472face728f038b6d209",
           "version": null
         }
       }

@@ -1,6 +1,6 @@
 import ScadeKit
 
-class FusionPayments3: SCDApplication {
+class ScadePaymentsApp: SCDApplication {
 
   let window = SCDLatticeWindow()
   let mainAdapter = MainPageAdapter()
