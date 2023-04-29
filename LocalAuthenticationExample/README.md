@@ -2,13 +2,11 @@
 
 
 ### iOS
-![ios_localauth](/
-LocalAuthenticationExample/screenshots/ios_localauth.gif) 
+![ios_localauth](/LocalAuthenticationExample/screenshots/ios_localauth.gif) 
 
 
 ### Android
-![android_localauath](/
-LocalAuthenticationExample/screenshots/android_localauth.gif) 
+![android_localauath](/LocalAuthenticationExample/screenshots/android_localauth.gif) 
 
 
 ## Add FusionLocalAuth to `Package.swift`
