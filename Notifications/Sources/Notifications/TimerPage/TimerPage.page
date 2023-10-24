@@ -1,0 +1,77 @@
+<?xml  version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:binding="http://scade.com/sdk/data/binding" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http://scade.com/sdk/view/graphics" xmlns:layout="http://scade.com/sdk/layout" xmlns:navigation="http://scade.com/lattice/navigation" xmlns:widgets="http://scade.com/sdk/view/widgets">
+  <widgets:Page name="TimerPage">
+    <minArea width="414" height="736"/>
+    <location/>
+    <backgroundColor Red="248" Green="248" Blue="248"/>
+    <children xsi:type="widgets:Label" text="Title" name="label">
+      <font fontFamily="ArialMT" size="15">
+        <color Red="70" Green="70" Blue="70"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="TOP" constant="50" source="/0/@children.0" target="/0"/>
+        <constraints constant="30" source="/0/@children.0" target="/0"/>
+      </layoutData>
+      <location x="30" y="50"/>
+      <size width="44" height="22"/>
+      <contentSize width="28" height="18"/>
+    </children>
+    <children xsi:type="widgets:Textbox" placeholder="Input the title of notification" text="Hello World" name="titleTextfield">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="191" Green="191" Blue="191"/>
+      </font>
+      <location x="30" y="92"/>
+      <size width="354" height="22"/>
+      <contentSize width="354" height="19"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="20" source="/0/@children.1" target="/0/@children.0"/>
+        <constraints constant="30" source="/0/@children.1" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-30" source="/0/@children.1" target="/0"/>
+      </layoutData>
+      <backgroundColor Red="238" Green="238" Blue="238" Alpha="204"/>
+    </children>
+    <children xsi:type="widgets:Label" text="Body" name="label1">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="70" Green="70" Blue="70"/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="30" source="/0/@children.2" target="/0/@children.1"/>
+        <constraints constant="30" source="/0/@children.2" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-30" source="/0/@children.2" target="/0"/>
+      </layoutData>
+      <location x="30" y="144"/>
+      <size width="354" height="22"/>
+      <contentSize width="39" height="19"/>
+    </children>
+    <children xsi:type="widgets:Textbox" placeholder="Input the body of notification" text="My Local Notification" name="bodyTextfield">
+      <font fontFamily="ArialMT" size="17">
+        <color Red="191" Green="191" Blue="191"/>
+      </font>
+      <location x="30" y="186"/>
+      <size width="354" height="22"/>
+      <contentSize width="354" height="19"/>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="20" source="/0/@children.3" target="/0/@children.2"/>
+        <constraints constant="30" source="/0/@children.3" target="/0"/>
+        <constraints sourceAnchor="RIGHT" targetAnchor="RIGHT" constant="-30" source="/0/@children.3" target="/0"/>
+      </layoutData>
+      <backgroundColor Red="238" Green="238" Blue="238" Alpha="204"/>
+    </children>
+    <children xsi:type="widgets:Button" text="Send" name="sendButton" horizontalAlignment="CENTER">
+      <font fontFamily="ArialMT" size="17">
+        <color/>
+      </font>
+      <layoutData xsi:type="layout:AutoLayoutData">
+        <constraints sourceAnchor="TOP" targetAnchor="BOTTOM" constant="50" source="/0/@children.4" target="/0/@children.3"/>
+      </layoutData>
+      <location x="152" y="258"/>
+      <size width="86" height="23"/>
+      <contentSize width="40" height="19"/>
+    </children>
+    <layout xsi:type="layout:AutoLayout"/>
+    <maxArea width="414" height="736"/>
+    <size width="414" height="736"/>
+  </widgets:Page>
+  <binding:BindingModel/>
+  <navigation:Navigation page="/0"/>
+</xmi:XMI>
