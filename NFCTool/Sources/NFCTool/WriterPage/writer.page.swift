@@ -48,22 +48,22 @@ class WriterPageAdapter: SCDLatticePageAdapter {
 
         switch item?.id {
         case "facetime":
-          self.navigation!.go(page: "facetime.page", transition: .FROM_LEFT)
+          self.navigation!.go(page: "facetime.page")
 
         case "sms":
-          self.navigation!.go(page: "message.page", transition: .FROM_LEFT)
+          self.navigation!.go(page: "message.page")
 
         case "phone":
-          self.navigation!.go(page: "phonenumber.page", transition: .FROM_LEFT)
+          self.navigation!.go(page: "phonenumber.page")
 
         case "website":
-          self.navigation!.go(page: "website.page", transition: .FROM_LEFT)
+          self.navigation!.go(page: "website.page")
 
         case "email":
-          self.navigation!.go(page: "email.page", transition: .FROM_LEFT)
+          self.navigation!.go(page: "email.page")
 
         case "shortcut":
-          self.navigation!.go(page: "shortcut.page", transition: .FROM_LEFT)
+          self.navigation!.go(page: "shortcut.page")
 
         default:
           print("default")
