@@ -8,7 +8,7 @@ let SCADE_SDK = ProcessInfo.processInfo.environment["SCADE_SDK"] ?? ""
 let package = Package(
     name: "BluetoothApp",
     platforms: [
-        .macOS(.v10_14)
+        .macOS(.v10_14), .iOS(.v12)
     ],
     products: [
         .library(
@@ -20,7 +20,7 @@ let package = Package(
         )
     ],
     dependencies: [
-		.package(name: "FusionBluetooth", url: "https://github.com/scade-platform/FusionBluetooth.git", .branch("light")),
+		.package(name: "FusionBluetooth", url: "https://github.com/scade-platform/FusionBluetooth.git", .branch("main")),
     ],
     targets: [
         .target(

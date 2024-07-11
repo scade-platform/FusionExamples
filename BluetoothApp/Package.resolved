@@ -5,8 +5,8 @@
         "package": "FusionBluetooth",
         "repositoryURL": "https://github.com/scade-platform/FusionBluetooth.git",
         "state": {
-          "branch": "light",
-          "revision": "e94df3ce92c9636bd1ad675f79e1ddaa72c46b18",
+          "branch": "main",
+          "revision": "054b123058ee40745a235536b865d8058fe8209d",
           "version": null
         }
       },
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/scade-platform/swift-android.git",
         "state": {
           "branch": "android/24",
-          "revision": "d20d4c4948b3bc6f4f54fa3f2c9023ede32d7f7b",
+          "revision": "510ee0dacb085c532c330377d25dff6ad23c3b5f",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/scade-platform/swift-java.git",
         "state": {
           "branch": "main",
-          "revision": "f433aa076a60391346a3f4b51408307e0a613325",
+          "revision": "6b2cf43f63cc5959978caee931c487d07f7d9c03",
           "version": null
         }
       }
