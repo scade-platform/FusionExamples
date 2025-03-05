@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scade="http://www.scade.io/v0.1" widget-name="TimerPage" eObject-URI="TimerPage.page#/0" width="414" height="736">
+  <svg template-id="background" width="414" height="736" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+    <rect width="100%" height="100%" fill="#f8f8f8" />
+  </svg>
+  <g template-id="content">
+    <g widget-name="label" eObject-URI="TimerPage.page#/0/@children.0" transform="matrix(1 0 0 1 30 50)">
+      <svg template-id="background" width="44" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="15" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">Title</text>
+    </g>
+    <g widget-name="titleTextfield" eObject-URI="TimerPage.page#/0/@children.1" transform="matrix(1 0 0 1 30 92)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+        <rect width="100%" height="100%" fill="#eeeeee" />
+      </svg>
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" inputTextWidth="354" editable="true" template-id="node-text" x="0" y="11" fill="#bfbfbf">Hello World</text>
+    </g>
+    <g widget-name="label1" eObject-URI="TimerPage.page#/0/@children.2" transform="matrix(1 0 0 1 30 144)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="0" y="11" fill="#464646">Body</text>
+    </g>
+    <g widget-name="bodyTextfield" eObject-URI="TimerPage.page#/0/@children.3" transform="matrix(1 0 0 1 30 186)">
+      <svg template-id="background" width="354" height="22" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w">
+        <rect width="100%" height="100%" fill="#eeeeee" />
+      </svg>
+      <text alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" inputTextWidth="354" editable="true" template-id="node-text" x="0" y="11" fill="#bfbfbf">My Local Notification</text>
+    </g>
+    <g widget-name="sendButton" eObject-URI="TimerPage.page#/0/@children.4" transform="matrix(1 0 0 1 152 258)">
+      <svg template-id="background" width="86" height="23" constraints="direct!http://scade.com/svg/draw#//Box/height|size.h;direct!http://scade.com/svg/draw#//Box/width|size.w" />
+      <text text-anchor="middle" alignment-baseline="central" font-size="17" font-family="ArialMT" font-style="normal" text-decoration="none" template-id="node-text" x="43" y="11.5" fill="#0">Send</text>
+    </g>
+  </g>
+</svg>
